@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/top_navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/account_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/account_icon" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="25dp"
+            android:text="@string/username"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/vaccine_card"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#023E8A"
+        android:drawableLeft="@drawable/vaccine_card"
+        android:drawableTint="@color/white"
+        android:text="@string/vaccine_card"
+        app:layout_constraintBottom_toTopOf="@+id/log_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_information" />
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#023E8A"
+        android:drawableTint="@color/white"
+        android:text="@string/log_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccine_card" />
+
+    <Button
+        android:id="@+id/my_favourites"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#023E8A"
+        android:drawableLeft="@drawable/heart_filled"
+        android:drawableTint="@color/white"
+        android:text="@string/my_favourites"
+        app:layout_constraintBottom_toTopOf="@+id/personal_information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_bookings" />
+
+    <Button
+        android:id="@+id/my_bookings"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#023E8A"
+        android:drawableLeft="@drawable/bookings_icon"
+        android:drawableTint="@color/white"
+        android:text="@string/my_bookings"
+        app:layout_constraintBottom_toTopOf="@+id/my_favourites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/personal_information"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#023E8A"
+        android:drawableLeft="@drawable/personal_information"
+        android:drawableTint="@color/white"
+        android:text="@string/personal_infomation"
+        app:layout_constraintBottom_toTopOf="@+id/vaccine_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_favourites" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<resources>
+    <!--Login Screen-->
+    <string name="app_name">Valetudo.</string>
+    <string name="welcome_to_valetudo">Welcome to Valetudo.</string>
+    <string name="welcome_message">Create an account or sign in to an existing one to access saved bookings, leave reviews about properties you’ve stayed at and more.</string>
+    <string name="login_email">Login with email</string>
+    <string name="login_google">Sign in with Google</string>
+    <string name="create_account">Create an Account</string>
+    <string name="create_account_banner">Create an Account.</string>
+    <string name="webapp_clientid">1027377148177-popk7cn0654rgtv6d147nsa5lch03ns8.apps.googleusercontent.com</string>
+
+    <!--Facebook Log In Button-->
+    <string name="facebook_app_id">579632557124906</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">ec476c6a9c692a53ddee9da4bbde927f</string>
+    <string name="buy_with_googlepay_button_content_description">Buy with Google Pay></string>
+
+    <!--Create Account Screen-->
+    <string name="name">Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="terms">I accept Valeudo’s Terms and Conditions and Privacy Statement.</string>
+    <string name="logout">Logout</string>
+
+    <!--Email Login Screen-->
+    <string name="email_login_text">Sign in with Email and Password.</string>
+    <string name="no_account">Don\'t have an account? Create one here.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!--Navigation Bar-->
+    <string name="search">Search</string>
+    <string name="saved">Saved</string>
+    <string name="map">Map</string>
+    <string name="bookings">Bookings</string>
+    <string name="account">Account</string>
+
+    <!--Account Fragment-->
+    <string name="username">User Name</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="my_favourites">My Favourites</string>
+    <string name="personal_infomation">Personal Information</string>
+    <string name="vaccine_card">My Vaccine Card</string>
+    <string name="log_out">Log out</string>
+
+    <!--Personal Information Fragment-->
+    <string name="personal_information_fragment">Personal Information.</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_text">Would you like to reset your password?</string>
+
+    <string name="managed_by_provider">Managed by your provider.</string>
+
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_confirmation">Are you sure you wish to delete your account? This action cannot be undone.</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <!--Search widget-->
+    <string name="search_text">Search for a City, Country, POI…</string>
+    <string name="dates">Select Date</string>
+    <string name="rooms">Select Room Type</string>
+    <string name="cases">Cases</string>
+    <string name="deaths">Deaths</string>
+    <string name="select_stat">Search for a country.</string>
+    <string name="alert1">This country requires proof of a full COVID-19 vaccination before travel.</string>
+    <string name="alert2">This country requires 14 day quarantine on arrival without proof of COVID-19 vaccination.</string>
+    <string name="alert3">Masks are mandatory in all venues within this country (Except those who are exempt).</string>
+    <string name="taxes">Includes all taxes and charges.</string>
+    <string name="title_activity_hotel_page">hotelPage</string>
+
+    <!--Hotel widget-->
+    <string name="check_in_date">Check In Date</string>
+    <string name="check_out_date">Check Out Date</string>
+    <string name="covid1">This hotel has special cleaning procedures in place between each guest check out.</string>
+    <string name="covid2">Proof of vaccination is required to stay at this hotel.</string>
+    <string name="covid3">Hand sanitiser is provided throughout this hotel.</string>
+    <string name="title_activity_booking">BookingActivity</string>
+
+    <string name="congratulations">Congratulations! Your booking at</string>
+    <string name="total">Total</string>
+    <string name="paid">Paid</string>
+    <string name="your_booking_reference">Your booking reference</string>
+    <string name="payments_show_name">Valetudo</string>
+    <string name="googlepay_status_unavailable">Google Pay is unavailable.</string>
+
+</resources>

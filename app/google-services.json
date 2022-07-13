@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1027377148177",
+    "project_id": "valtudo",
+    "storage_bucket": "valtudo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027377148177:android:64b2c81b7214e516e79cb0",
+        "android_client_info": {
+          "package_name": "com.example.valetudo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027377148177-popk7cn0654rgtv6d147nsa5lch03ns8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6-z2agxEua2QH6-8srDO_vAmeWfu5_2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027377148177-popk7cn0654rgtv6d147nsa5lch03ns8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

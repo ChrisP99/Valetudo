@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dose_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dose 1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            app:srcCompat="@drawable/qr_code" />
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Christopher Perry" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/date_of_birth_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="25/10/1999" />
+
+        <TextView
+            android:id="@+id/vaccine_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccine"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/vaccine_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Vaccine"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="AstraZeneca AB" />
+
+        <TextView
+            android:id="@+id/vaccine_1_label_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Date"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/vaccine_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Vaccine"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="08/02/2021" />
+
+        <TextView
+            android:id="@+id/dose_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dose 2"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            app:srcCompat="@drawable/qr_code" />
+
+        <TextView
+            android:id="@+id/vaccine_label2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccine"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/vaccine_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Vaccine"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="AstraZeneca AB" />
+
+        <TextView
+            android:id="@+id/vaccine_2_label_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Date"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/vaccine_2_date_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="18/04/2021" />
+
+        <Button
+            android:id="@+id/back_vaccine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#023E8A"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save" />
+    </LinearLayout>
+</ScrollView>

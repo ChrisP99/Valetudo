@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <TextView
+        android:id="@+id/create_an_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sf_pro"
+        android:importantForAutofill="yes"
+        android:text="@string/personal_information_fragment"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/managed_by_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sf_pro"
+        android:importantForAutofill="yes"
+        android:text="@string/managed_by_provider"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="42dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:fontFamily="@font/sf_pro"
+        android:hint="@string/email"
+        android:importantForAutofill="yes"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_an_account_text" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:autofillHints="firstName"
+        android:ems="10"
+        android:fontFamily="@font/sf_pro"
+        android:hint="@string/name"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:autofillHints="mobileNumber"
+        android:ems="10"
+        android:fontFamily="@font/sf_pro"
+        android:hint="@string/mobile"
+        android:importantForAutofill="yes"
+        android:inputType="number|text"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#023E8A"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#023E8A"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <Button
+        android:id="@+id/delete_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#023E8A"
+        android:text="@string/delete_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <Button
+        android:id="@+id/reset_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#023E8A"
+        android:text="@string/reset_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_account" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/navigation_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sf_pro"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/create_an_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="125dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/create_account_banner"
+        android:textColor="#000000"
+        android:importantForAutofill="yes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigation_bar_top" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:fontFamily="@font/sf_pro"
+        android:hint="@string/email"
+        android:importantForAutofill="yes"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_an_account_text" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:autofillHints="firstName"
+        android:ems="10"
+        android:fontFamily="@font/sf_pro"
+        android:hint="@string/name"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:autofillHints="mobileNumber"
+        android:ems="10"
+        android:fontFamily="@font/sf_pro"
+        android:hint="@string/mobile"
+        android:importantForAutofill="yes"
+        android:inputType="number|text"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="329dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="41dp"
+        android:importantForAutofill="yes"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile"
+        android:autofillHints="password" />
+
+    <EditText
+        android:id="@+id/repeat_password"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:hint="@string/repeat_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:autofillHints="password" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#023E8A"
+        android:text="@string/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms" />
+
+    <CheckBox
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/terms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@drawable/search_icon"
+        android:checkable="true"/>
+    <item android:id="@+id/map"
+        android:title="@string/map"
+        android:icon="@drawable/map"
+        android:checkable="true"/>
+    <item android:id="@+id/saved"
+        android:title="@string/saved"
+        android:icon="@drawable/saved_icon"
+        android:checkable="true"/>
+    <item android:id="@+id/bookings"
+        android:title="@string/bookings"
+        android:icon="@drawable/bookings_icon"
+        android:checkable="true"/>
+    <item android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/account_icon"
+        android:checkable="true"/>
+</menu>

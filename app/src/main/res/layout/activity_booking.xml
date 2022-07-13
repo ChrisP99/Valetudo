@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE7E7"
+    tools:context=".BookingActivity">
+
+    <Button
+        android:id="@+id/go_to_bookings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#023E8A"
+        android:text="Go Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/check_in_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="checkIn"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:drawableTint="#03045E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_hotel_image" />
+
+    <TextView
+        android:id="@+id/check_out_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="checkIn"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:drawableTint="#03045E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_in_booking" />
+
+    <TextView
+        android:id="@+id/check_out_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/check_out_date"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_in_text4" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/total"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_out_text2" />
+
+    <TextView
+        android:id="@+id/total2"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/total"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_out_text2" />
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="97dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/sf_pro"
+        android:gravity="center"
+        android:text="@string/total"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_out_booking" />
+
+    <TextView
+        android:id="@+id/paid"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/paid"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/city_image2"
+        app:layout_constraintTop_toBottomOf="@+id/total" />
+
+    <ImageView
+        android:id="@+id/city_image2"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_out_text2"
+        app:srcCompat="@drawable/check"
+        app:tint="#53C437" />
+
+    <TextView
+        android:id="@+id/check_in_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/check_in_date"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_hotel_image" />
+
+    <ImageView
+        android:id="@+id/booking_hotel_image"
+        android:layout_width="393dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_name_booking"
+        app:srcCompat="@drawable/account_icon" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Valetudo.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/top_navbar"
+            app:popupTheme="@style/Theme.Valetudo.PopupOverlay">
+
+            <TextView
+                android:id="@+id/hotel_name_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sf_pro"
+                android:text="hotelName"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/hotel_name_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="hotelName"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/hotel_name_booking2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Booking Confirmed."
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/your_booking_reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/your_booking_reference"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/booking_reference"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/booking_reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="bookingReference"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/go_to_bookings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
